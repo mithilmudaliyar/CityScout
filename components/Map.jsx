@@ -11,7 +11,7 @@ const Map = ({ coordinates, setCoordinates, setBounds, places }) => {
   return (
     <Box width={"full"} height={"full"}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "API KEY GOES HERE" }}
+        bootstrapURLKeys={{ key: "AIzaSyC5YV5aaayzhhRtVRcVHXS7i9y_GB6C41w" }}
         defaultCenter={coordinates}
         center={coordinates}
         defaultZoom={10}
@@ -26,7 +26,7 @@ const Map = ({ coordinates, setCoordinates, setBounds, places }) => {
           setIsCard(true);
         }}
       >
-        {/* {places?.map((place, i) => (
+        {places?.map((place, i) => (
           <Box
             lat={Number(place.latitude)}
             lng={Number(place.longitude)}
@@ -89,7 +89,7 @@ const Map = ({ coordinates, setCoordinates, setBounds, places }) => {
               <BiX fontSize={20} />
             </Box>
           </Box>
-        )} */}
+        )}
       </GoogleMapReact>
     </Box>
   );
