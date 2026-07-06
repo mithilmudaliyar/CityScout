@@ -9,7 +9,7 @@ import {
   MenuList,
   Text, 
 } from "@chakra-ui/react";
-import { Rating } from "@material-ui/lab";
+import Rating from "./Rating";
 import { Autocomplete } from "@react-google-maps/api";
 import React, { useState } from "react";
 
